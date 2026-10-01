@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>InsightHub | Analytics UI Collection</title>
+    <title>User Analytics | InsightHub</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,85 +33,105 @@
             </div>
         </div>
 
-
         <nav>
-            <a href="#home">Home</a>
-            <a href="#templates">Templates</a>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#templates">Templates</a>
+            <a href="../index.html#features">Features</a>
+            <a href="../index.html#about">About</a>
         </nav>
 
-
-        <a href="#templates" class="nav-button">
-            Explore Templates →
+        <a href="../index.html" class="nav-button">
+            ← Back Home
         </a>
 
     </header>
 
 
+    <!-- USER ANALYTICS -->
 
-    <!-- HERO SECTION -->
+    <main class="container">
 
-    <main>
+        <div class="top">
 
-        <section class="hero" id="home">
+            <div>
+                <h1>👥 User Analytics</h1>
+                <p>User growth and engagement</p>
+            </div>
 
-            <div class="hero-content">
+            <select id="userFilter">
+                <option value="month">This Month</option>
+                <option value="quarter">This Quarter</option>
+                <option value="year">This Year</option>
+            </select>
 
-                <div class="badge">
-                    <span class="live-dot"></span>
-                    Analytics & Data Visualization
-                </div>
-
-
-                <h1>
-                    Turn Data Into
-                    <span>Powerful Insights.</span>
-                </h1>
-
-
-                <p>
-                    A modern collection of analytics dashboards and
-                    data visualization interfaces designed for
-                    businesses, teams and data-driven decisions.
-                </p>
+        </div>
 
 
-                <div class="hero-buttons">
+        <!-- KPI SECTION -->
 
-                    <a href="#templates" class="primary-button">
-                        Explore Dashboards →
-                    </a>
+        <section class="kpi-grid">
 
-                    <a href="#about" class="secondary-button">
-                        Learn More
-                    </a>
+            <div class="card">
+                <h3>Total Users</h3>
+                <div class="value" id="totalUsers">18,450</div>
+                <span class="positive">+8.2%</span>
+            </div>
 
-                </div>
+            <div class="card">
+                <h3>New Users</h3>
+                <div class="value" id="newUsers">3,250</div>
+                <span class="positive">+11.4%</span>
+            </div>
+
+            <div class="card">
+                <h3>Active Users</h3>
+                <div class="value" id="activeUsers">12,840</div>
+                <span class="positive">+7.5%</span>
+            </div>
+
+            <div class="card">
+                <h3>Returning Users</h3>
+                <div class="value" id="returningUsers">8,420</div>
+                <span class="positive">+5.8%</span>
+            </div>
+
+        </section>
 
 
-                <!-- Hero Statistics -->
+        <!-- CHARTS -->
 
-                <div class="hero-stats">
+        <section class="charts">
 
-                    <div class="hero-stat">
-                        <strong>04</strong>
-                        <span>UI Templates</span>
+            <!-- USER GROWTH -->
+
+            <div class="panel">
+
+                <h2>User Growth</h2>
+
+                <div class="bar-chart">
+
+                    <div class="bar" style="height: 45%;">
+                        <span>Jan</span>
                     </div>
 
-                    <div class="hero-stat">
-                        <strong>20+</strong>
-                        <span>Analytics Metrics</span>
+                    <div class="bar" style="height: 55%;">
+                        <span>Feb</span>
                     </div>
 
-                    <div class="hero-stat">
-                        <strong>100%</strong>
-                        <span>Responsive</span>
+                    <div class="bar" style="height: 60%;">
+                        <span>Mar</span>
                     </div>
 
-                    <div class="hero-stat">
-                        <strong>HTML</strong>
-                        <span>CSS & JS</span>
+                    <div class="bar" style="height: 70%;">
+                        <span>Apr</span>
+                    </div>
+
+                    <div class="bar" style="height: 82%;">
+                        <span>May</span>
+                    </div>
+
+                    <div class="bar" style="height: 95%;">
+                        <span>Jun</span>
                     </div>
 
                 </div>
@@ -119,124 +139,29 @@
             </div>
 
 
+            <!-- USER DISTRIBUTION -->
 
-            <!-- HERO DASHBOARD PREVIEW -->
+            <div class="panel">
 
-            <div class="dashboard-preview">
+                <h2>User Distribution</h2>
 
-                <div class="preview-header">
-
-                    <div>
-                        <span class="small-label">INSIGHTHUB</span>
-                        <h3>Performance Overview</h3>
-                    </div>
-
-                    <span class="online">
-                        ● Live
-                    </span>
-
-                </div>
-
-
-                <div class="preview-stats">
+                <div class="distribution">
 
                     <div>
-                        <span>Revenue</span>
-                        <strong>$245.8K</strong>
-                        <small>↑ 12.5%</small>
+                        <span>New Users</span>
+                        <strong>38%</strong>
                     </div>
 
                     <div>
-                        <span>Users</span>
-                        <strong>18.4K</strong>
-                        <small>↑ 8.2%</small>
+                        <span>Returning</span>
+                        <strong>32%</strong>
                     </div>
 
                     <div>
-                        <span>Orders</span>
-                        <strong>5,280</strong>
-                        <small>↑ 10.4%</small>
+                        <span>Active</span>
+                        <strong>30%</strong>
                     </div>
 
-                </div>
-
-
-                <!-- Fake Chart -->
-
-                <div class="chart">
-
-                    <div class="chart-lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <svg viewBox="0 0 500 180" preserveAspectRatio="none">
-
-                        <defs>
-
-                            <linearGradient
-                                id="areaGradient"
-                                x1="0"
-                                y1="0"
-                                x2="0"
-                                y2="1">
-
-                                <stop
-                                    offset="0%"
-                                    stop-color="#7c3aed"
-                                    stop-opacity="0.45" />
-
-                                <stop
-                                    offset="100%"
-                                    stop-color="#7c3aed"
-                                    stop-opacity="0" />
-
-                            </linearGradient>
-
-                        </defs>
-
-
-                        <path
-                            d="M0 145
-                               C45 135,55 115,90 125
-                               C125 135,145 85,180 95
-                               C215 105,235 75,270 82
-                               C305 90,325 45,360 60
-                               C395 75,420 35,450 48
-                               C475 58,485 30,500 25
-                               L500 180
-                               L0 180 Z"
-                            fill="url(#areaGradient)"
-                        />
-
-
-                        <path
-                            d="M0 145
-                               C45 135,55 115,90 125
-                               C125 135,145 85,180 95
-                               C215 105,235 75,270 82
-                               C305 90,325 45,360 60
-                               C395 75,420 35,450 48
-                               C475 58,485 30,500 25"
-                            fill="none"
-                            stroke="#8b5cf6"
-                            stroke-width="4"
-                        />
-
-                    </svg>
-
-                </div>
-
-
-                <div class="chart-labels">
-                    <span>Jan</span>
-                    <span>Feb</span>
-                    <span>Mar</span>
-                    <span>Apr</span>
-                    <span>May</span>
-                    <span>Jun</span>
                 </div>
 
             </div>
@@ -244,360 +169,41 @@
         </section>
 
 
+        <!-- USER ACTIVITY -->
 
-        <!-- TEMPLATE SECTION -->
+        <section class="panel">
 
-        <section class="templates-section" id="templates">
+            <h2>User Activity</h2>
 
-            <div class="section-heading">
+            <div class="activity">
 
-                <div>
-                    <span class="section-label">EXPLORE</span>
+                <span>🟢</span>
 
-                    <h2>
-                        Analytics
-                        <span>Templates</span>
-                    </h2>
+                <p>Active users today</p>
 
-                    <p>
-                        Explore our collection of modern analytics
-                        and data visualization interfaces.
-                    </p>
-                </div>
-
-
-                <div class="template-count">
-                    <strong>04</strong>
-                    <span>Templates</span>
-                </div>
+                <strong>12,840</strong>
 
             </div>
 
 
+            <div class="activity">
 
-            <div class="template-grid">
+                <span>👤</span>
 
+                <p>New registrations</p>
 
-                <!-- MEMBER 1 -->
-
-                <a
-                    href="member1-analytics-dashboard/index.html"
-                    class="template-card blue">
-
-                    <div class="card-top">
-
-                        <div class="template-icon">
-                            📊
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </div>
-
-
-                    <div class="card-number">
-                        01
-                    </div>
-
-
-                    <h3>
-                        Analytics Dashboard
-                    </h3>
-
-
-                    <p>
-                        Monitor overall business performance
-                        using KPIs, charts, trends and
-                        recent activities.
-                    </p>
-
-
-                    <div class="card-tags">
-
-                        <span>KPI</span>
-                        <span>Charts</span>
-                        <span>Performance</span>
-
-                    </div>
-
-
-                    <div class="view-link">
-                        View Dashboard
-                        <span>→</span>
-                    </div>
-
-                </a>
-
-
-
-                <!-- MEMBER 2 -->
-
-                <a
-                    href="member2-revenue-analytics/index.html"
-                    class="template-card green">
-
-                    <div class="card-top">
-
-                        <div class="template-icon">
-                            💰
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </div>
-
-
-                    <div class="card-number">
-                        02
-                    </div>
-
-
-                    <h3>
-                        Revenue Analytics
-                    </h3>
-
-
-                    <p>
-                        Analyze revenue performance,
-                        growth trends, categories and
-                        top revenue sources.
-                    </p>
-
-
-                    <div class="card-tags">
-
-                        <span>Revenue</span>
-                        <span>Growth</span>
-                        <span>Finance</span>
-
-                    </div>
-
-
-                    <div class="view-link">
-                        View Analytics
-                        <span>→</span>
-                    </div>
-
-                </a>
-
-
-
-                <!-- MEMBER 3 -->
-
-                <a
-                    href="member3-user-analytics/index.html"
-                    class="template-card purple">
-
-                    <div class="card-top">
-
-                        <div class="template-icon">
-                            👥
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </div>
-
-
-                    <div class="card-number">
-                        03
-                    </div>
-
-
-                    <h3>
-                        User Analytics
-                    </h3>
-
-
-                    <p>
-                        Understand user growth, active
-                        users, registrations and
-                        returning customers.
-                    </p>
-
-
-                    <div class="card-tags">
-
-                        <span>Users</span>
-                        <span>Growth</span>
-                        <span>Activity</span>
-
-                    </div>
-
-
-                    <div class="view-link">
-                        View Analytics
-                        <span>→</span>
-                    </div>
-
-                </a>
-
-
-
-                <!-- MEMBER 4 -->
-
-                <a
-                    href="member4-realtime-analytics/index.html"
-                    class="template-card orange">
-
-                    <div class="card-top">
-
-                        <div class="template-icon">
-                            ⚡
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </div>
-
-
-                    <div class="card-number">
-                        04
-                    </div>
-
-
-                    <h3>
-                        Real-Time Analytics
-                    </h3>
-
-
-                    <p>
-                        Monitor live users, orders,
-                        revenue, activity and
-                        system performance.
-                    </p>
-
-
-                    <div class="card-tags">
-
-                        <span>Live</span>
-                        <span>Monitoring</span>
-                        <span>Traffic</span>
-
-                    </div>
-
-
-                    <div class="view-link">
-                        View Dashboard
-                        <span>→</span>
-                    </div>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- FEATURES -->
-
-        <section class="features-section" id="features">
-
-            <div class="section-heading center">
-
-                <span class="section-label">
-                    WHY INSIGHTHUB
-                </span>
-
-                <h2>
-                    Built for
-                    <span>Data-Driven Teams</span>
-                </h2>
-
-                <p>
-                    Simple, modern and responsive interfaces
-                    for visualizing important business data.
-                </p>
+                <strong>3,250</strong>
 
             </div>
 
 
-            <div class="features-grid">
+            <div class="activity">
 
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
+                <span>🔄</span>
 
-                    <h3>Data Visualization</h3>
+                <p>Returning users</p>
 
-                    <p>
-                        Present complex information using
-                        clean charts, metrics and visual
-                        components.
-                    </p>
-                </div>
-
-
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-
-                    <h3>Interactive UI</h3>
-
-                    <p>
-                        Interactive filters and dynamic
-                        components make dashboards easier
-                        to explore.
-                    </p>
-                </div>
-
-
-                <div class="feature">
-                    <div class="feature-icon">📱</div>
-
-                    <h3>Responsive Design</h3>
-
-                    <p>
-                        Interfaces adapt smoothly to
-                        desktops, tablets and mobile devices.
-                    </p>
-                </div>
-
-
-                <div class="feature">
-                    <div class="feature-icon">🧩</div>
-
-                    <h3>Modular Templates</h3>
-
-                    <p>
-                        Each dashboard is separated into
-                        independent HTML, CSS and JavaScript
-                        files.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ABOUT -->
-
-        <section class="about-section" id="about">
-
-            <div class="about-box">
-
-                <div>
-
-                    <span class="section-label">
-                        ABOUT THE PROJECT
-                    </span>
-
-                    <h2>
-                        One Collection.
-                        <span>Multiple Insights.</span>
-                    </h2>
-
-                </div>
-
-
-                <p>
-                    InsightHub is a UI Template Collection focused
-                    on Analytics & Data Visualization. The project
-                    demonstrates how modern dashboards can transform
-                    business data into clear and useful visual
-                    information using HTML, CSS and JavaScript.
-                </p>
+                <strong>8,420</strong>
 
             </div>
 
@@ -606,25 +212,26 @@
     </main>
 
 
-
     <!-- FOOTER -->
 
     <footer>
 
         <div class="footer-logo">
-            <div class="logo-icon">I</div>
+
+            <div class="logo-icon">
+                I
+            </div>
 
             <div>
                 <strong>InsightHub</strong>
                 <span>Analytics UI Collection</span>
             </div>
-        </div>
 
+        </div>
 
         <p>
             Built with HTML • CSS • JavaScript
         </p>
-
 
         <p>
             © 2026 InsightHub
@@ -636,4 +243,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
