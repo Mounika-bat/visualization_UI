@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard | InsightHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>📊 Analytics Dashboard</h1>
+        <p>Overall business performance</p>
+    </div>
+
+    <a href="../index.html">← Home</a>
+</header>
+
+<main class="container">
+
+    <div class="top">
+        <div>
+            <h2>Dashboard Overview</h2>
+            <p>Monitor important business metrics.</p>
+        </div>
+
+        <select id="period">
+            <option value="month">This Month</option>
+            <option value="quarter">This Quarter</option>
+            <option value="year">This Year</option>
+        </select>
+    </div>
+
+    <section class="kpi-grid">
+
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <div class="value" id="revenue">$245,800</div>
+            <span class="positive">+12.5%</span>
+        </div>
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <div class="value" id="users">18,450</div>
+            <span class="positive">+8.2%</span>
+        </div>
+
+        <div class="card">
+            <h3>Total Orders</h3>
+            <div class="value" id="orders">5,280</div>
+            <span class="positive">+10.4%</span>
+        </div>
+
+        <div class="card">
+            <h3>Conversion Rate</h3>
+            <div class="value" id="conversion">6.8%</div>
+            <span class="positive">+2.1%</span>
+        </div>
+
+    </section>
+
+    <section class="charts">
+
+        <div class="panel">
+            <h2>Monthly Revenue</h2>
+
+            <div class="bar-chart">
+                <div class="bar" style="height:45%">
+                    <span>Jan</span>
+                </div>
+
+                <div class="bar" style="height:60%">
+                    <span>Feb</span>
+                </div>
+
+                <div class="bar" style="height:55%">
+                    <span>Mar</span>
+                </div>
+
+                <div class="bar" style="height:75%">
+                    <span>Apr</span>
+                </div>
+
+                <div class="bar" style="height:70%">
+                    <span>May</span>
+                </div>
+
+                <div class="bar" style="height:90%">
+                    <span>Jun</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Performance</h2>
+
+            <div class="progress-item">
+                <div>
+                    <span>User Growth</span>
+                    <strong>82%</strong>
+                </div>
+
+                <div class="progress">
+                    <div style="width:82%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Orders</span>
+                    <strong>68%</strong>
+                </div>
+
+                <div class="progress">
+                    <div style="width:68%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Conversion</span>
+                    <strong>74%</strong>
+                </div>
+
+                <div class="progress">
+                    <div style="width:74%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="panel">
+        <h2>Recent Activity</h2>
+
+        <div class="activity">
+            <span>🛒</span>
+            <p>New order received</p>
+            <small>2 minutes ago</small>
+        </div>
+
+        <div class="activity">
+            <span>👤</span>
+            <p>New user registered</p>
+            <small>8 minutes ago</small>
+        </div>
+
+        <div class="activity">
+            <span>💰</span>
+            <p>Payment completed</p>
+            <small>15 minutes ago</small>
+        </div>
+
+        <div class="activity">
+            <span>📈</span>
+            <p>Revenue increased</p>
+            <small>25 minutes ago</small>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
