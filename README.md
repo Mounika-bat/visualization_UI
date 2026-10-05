@@ -89,6 +89,9 @@ Fork → Clone → Branch → Develop → Commit → Push → Pull Request → R
 
 
 
+<img width="1732" height="983" alt="Screenshot 2026-10-05 103610" src="https://github.com/user-attachments/assets/58f756c7-94d1-4c7f-9cd3-d37b636645a0" />
+
+
 ## Folder Structure
 
 ```text
