@@ -80,7 +80,8 @@ The project follows:
 
 Fork → Clone → Branch → Develop → Commit → Push → Pull Request → Review → Merge
 
-###Screenshots:
+### Screenshots:
+
 <img width="1695" height="890" alt="Screenshot 2026-10-05 094925" src="https://github.com/user-attachments/assets/264a6283-e454-4a84-aacd-501f41a68e81" />
 <img width="1777" height="976" alt="Screenshot 2026-10-05 094825" src="https://github.com/user-attachments/assets/34931ee4-aff1-447d-a16e-949a0f7069e1" />
 <img width="1788" height="978" alt="Screenshot 2026-10-05 094748" src="https://github.com/user-attachments/assets/d05f81ab-4a22-4c99-b116-ac98fe5e4bb5" />
